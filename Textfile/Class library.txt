@@ -1,0 +1,94 @@
+CLASS LIBRARY -----------
+
+using System;  
+using System.Collections.Generic;  
+using System.Text;  
+namespace SampleLibrary  
+{  
+    public class Calculator 
+    {  
+        public double Addition(int x, int y)  
+        {  
+            return x + y;  
+        }  
+        public double Subtraction(int x, int y)  
+        {  
+            return x - y;  
+        }  
+        public double Multiplication(int x, int y)  
+        {  
+            return x * y;  
+        }  
+        public double Division(int x, int y)  
+        {  
+            return x / y;  
+        }  
+    }  
+} 
+Program------------
+
+using System;  
+using SampleLibrary;  
+public class CalculatorExample 
+{  
+    static void Main()  
+    {  
+        Calculator cal = new Calculator();  
+        int number1 = 100;  
+        int number2 = 50;  
+        int result = cal.Addition(number1, number2);  
+        Console.WriteLine(number1 "+" +number2 "=" +result);  
+        
+    } 
+ 
+} 
+
+
+MSTEST------------
+
+using System;
+
+namespace FindPrime
+{
+    public class PrimeNumber
+    {
+        public bool IsPrime(int candidate)
+        {
+           if (candidate < 2)
+           {
+              return false;
+           }
+           throw new NotImplementedException("Please create a test first.");
+        }
+    }
+}
+
+
+
+
+TestClass-----------
+
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using FindPrime;
+
+namespace FindPrime.UnitTests
+{
+    [TestClass]
+    public class PrimeNumber_IsPrimeShould
+    {
+        private readonly PrimeNumber _prime;
+
+        public PrimeNumber_IsPrimeShould()
+        {
+            _prime = new PrimeNumber();
+        }
+
+        [TestMethod]
+        public void IsPrime_InputIs1_ReturnFalse()
+        {
+            var result = _prime.IsPrime(1);
+
+            Assert.IsFalse(result, "should not be prime");
+        }
+    }
+}

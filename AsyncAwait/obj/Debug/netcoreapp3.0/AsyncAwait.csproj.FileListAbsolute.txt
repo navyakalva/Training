@@ -1,0 +1,11 @@
+C:\Training\AsyncAwait\bin\Debug\netcoreapp3.0\AsyncAwait.exe
+C:\Training\AsyncAwait\bin\Debug\netcoreapp3.0\AsyncAwait.deps.json
+C:\Training\AsyncAwait\bin\Debug\netcoreapp3.0\AsyncAwait.runtimeconfig.json
+C:\Training\AsyncAwait\bin\Debug\netcoreapp3.0\AsyncAwait.runtimeconfig.dev.json
+C:\Training\AsyncAwait\bin\Debug\netcoreapp3.0\AsyncAwait.dll
+C:\Training\AsyncAwait\bin\Debug\netcoreapp3.0\AsyncAwait.pdb
+C:\Training\AsyncAwait\obj\Debug\netcoreapp3.0\AsyncAwait.csprojAssemblyReference.cache
+C:\Training\AsyncAwait\obj\Debug\netcoreapp3.0\AsyncAwait.AssemblyInfoInputs.cache
+C:\Training\AsyncAwait\obj\Debug\netcoreapp3.0\AsyncAwait.AssemblyInfo.cs
+C:\Training\AsyncAwait\obj\Debug\netcoreapp3.0\AsyncAwait.dll
+C:\Training\AsyncAwait\obj\Debug\netcoreapp3.0\AsyncAwait.pdb

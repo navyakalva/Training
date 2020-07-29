@@ -1,0 +1,82 @@
+SINGLE RESPONSIBILITY--- in this the class user instead of doing 2 responsibilities of adding a msg to database and logging the 
+errors it uses another class for adding and the error logging.
+
+class User
+{
+    public Errortext error = new Errortext();
+    void update(Database db, string msg)
+    {
+        try
+        {
+            db.Add(msg);
+        }
+        catch (Exception ex)
+        {
+            error.handle(ex.ToString());
+        }
+    }
+}
+
+class Errortext
+{
+    void handle(string error)
+    {
+      File.WriteAllText("errors.txt", error);
+    }
+}
+
+OPEN CLOSED PRINICIPLE------ here class TextMessage send msg to database.if we want to find the structure of the msg we 
+took another class and inherited the base class and we can extend the feature in class tag.
+
+class TextMessage
+{
+    void sendMsg(Database db, string msg)
+    {
+        db.Add(msg);
+    }
+}
+
+// A class made specifically for tagging. 
+// If a new feature needs to be added
+class Tag : TextMessage // class Tag inherits TextMessage
+{
+    override void sendMsg(Database db, string msg)
+    {
+        if (msg.StartsWith("@"))
+        {
+            db.Tag(msg); // messages starting with @ are tags.
+        }
+       
+    }
+}
+
+LISKOV SUBSTITUTION PRINCIPLE----------
+here objects of VehiclesOnRoads are replaceble by objects of Bus.And the objects of aeroplane can be replaceble 
+by objects of vehicle.
+
+class Vehicle
+{
+  // functions that all vehicles do
+}
+class VehiclesOnRoads : Vehicle
+{
+  void road()
+  {
+    System.Console.WriteLine("Vehicles that travel on roads!");   
+  }
+}
+class Bus : VehiclesOnRoads 
+{
+  void Bus()
+  {
+    System.Console.WriteLine("Bus travel on road!");   
+  }
+
+}
+class Aeroplane : Vehicle
+{
+  
+
+}
+
+

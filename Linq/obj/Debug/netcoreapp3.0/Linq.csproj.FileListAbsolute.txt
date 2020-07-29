@@ -1,0 +1,11 @@
+C:\Training\Linq\bin\Debug\netcoreapp3.0\Linq.exe
+C:\Training\Linq\bin\Debug\netcoreapp3.0\Linq.deps.json
+C:\Training\Linq\bin\Debug\netcoreapp3.0\Linq.runtimeconfig.json
+C:\Training\Linq\bin\Debug\netcoreapp3.0\Linq.runtimeconfig.dev.json
+C:\Training\Linq\bin\Debug\netcoreapp3.0\Linq.dll
+C:\Training\Linq\bin\Debug\netcoreapp3.0\Linq.pdb
+C:\Training\Linq\obj\Debug\netcoreapp3.0\Linq.csprojAssemblyReference.cache
+C:\Training\Linq\obj\Debug\netcoreapp3.0\Linq.AssemblyInfoInputs.cache
+C:\Training\Linq\obj\Debug\netcoreapp3.0\Linq.AssemblyInfo.cs
+C:\Training\Linq\obj\Debug\netcoreapp3.0\Linq.dll
+C:\Training\Linq\obj\Debug\netcoreapp3.0\Linq.pdb

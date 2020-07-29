@@ -1,0 +1,8 @@
+C:\Training\ClassLibrary\SampleLibrary\bin\Debug\netstandard2.0\SampleLibrary.deps.json
+C:\Training\ClassLibrary\SampleLibrary\bin\Debug\netstandard2.0\SampleLibrary.dll
+C:\Training\ClassLibrary\SampleLibrary\bin\Debug\netstandard2.0\SampleLibrary.pdb
+C:\Training\ClassLibrary\SampleLibrary\obj\Debug\netstandard2.0\SampleLibrary.csprojAssemblyReference.cache
+C:\Training\ClassLibrary\SampleLibrary\obj\Debug\netstandard2.0\SampleLibrary.AssemblyInfoInputs.cache
+C:\Training\ClassLibrary\SampleLibrary\obj\Debug\netstandard2.0\SampleLibrary.AssemblyInfo.cs
+C:\Training\ClassLibrary\SampleLibrary\obj\Debug\netstandard2.0\SampleLibrary.dll
+C:\Training\ClassLibrary\SampleLibrary\obj\Debug\netstandard2.0\SampleLibrary.pdb

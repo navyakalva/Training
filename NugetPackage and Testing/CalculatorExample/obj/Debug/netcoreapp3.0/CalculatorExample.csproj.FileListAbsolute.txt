@@ -1,0 +1,14 @@
+C:\Training\ClassLibrary\CalculatorExample\obj\Debug\netcoreapp3.0\CalculatorExample.csprojAssemblyReference.cache
+C:\Training\ClassLibrary\CalculatorExample\obj\Debug\netcoreapp3.0\CalculatorExample.AssemblyInfoInputs.cache
+C:\Training\ClassLibrary\CalculatorExample\obj\Debug\netcoreapp3.0\CalculatorExample.AssemblyInfo.cs
+C:\Training\ClassLibrary\CalculatorExample\bin\Debug\netcoreapp3.0\CalculatorExample.exe
+C:\Training\ClassLibrary\CalculatorExample\bin\Debug\netcoreapp3.0\CalculatorExample.deps.json
+C:\Training\ClassLibrary\CalculatorExample\bin\Debug\netcoreapp3.0\CalculatorExample.runtimeconfig.json
+C:\Training\ClassLibrary\CalculatorExample\bin\Debug\netcoreapp3.0\CalculatorExample.runtimeconfig.dev.json
+C:\Training\ClassLibrary\CalculatorExample\bin\Debug\netcoreapp3.0\CalculatorExample.dll
+C:\Training\ClassLibrary\CalculatorExample\bin\Debug\netcoreapp3.0\CalculatorExample.pdb
+C:\Training\ClassLibrary\CalculatorExample\bin\Debug\netcoreapp3.0\SampleLibrary.dll
+C:\Training\ClassLibrary\CalculatorExample\bin\Debug\netcoreapp3.0\SampleLibrary.pdb
+C:\Training\ClassLibrary\CalculatorExample\obj\Debug\netcoreapp3.0\CalculatorExample.csproj.CopyComplete
+C:\Training\ClassLibrary\CalculatorExample\obj\Debug\netcoreapp3.0\CalculatorExample.dll
+C:\Training\ClassLibrary\CalculatorExample\obj\Debug\netcoreapp3.0\CalculatorExample.pdb

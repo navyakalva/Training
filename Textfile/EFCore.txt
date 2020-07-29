@@ -1,0 +1,74 @@
+CODE FIRST APPROACH USING EFCORE IN ONE TO ONE RELATIONSHIP
+
+STEP-1:
+    Firstly we should create a console application in visual studio.
+
+STEP-2:
+    Now we should create two entities in this application.
+The following Student and StudentAddress entities follow the convention for the one-to-one relationship.
+
+public class Student
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+       
+    public StudentAddress Address { get; set; }
+}
+
+public class StudentAddress
+{
+    public int StudentAddressId { get; set; }
+    public string Address { get; set; }
+    public string City { get; set; }
+    public string State { get; set; }
+    public string Country { get; set; }
+
+    public int StudentId { get; set; }
+    public Student Student { get; set; }
+}
+
+STEP-3:
+     We should add 2 Packages.In Manage Nuget packages we should add
+  ->Microsoft.EntityFrameworkCore.SqlServer
+  ->Microsoft.EntityFrameworkCore.Tools
+
+STEP-4:
+    Now  add a new class, StudentManagementContext.
+
+using Microsoft.EntityFrameworkCore;  
+  
+namespace StudentManagement  
+{  
+    public class StudentManagementContext : DbContext  
+    {  
+        public DbSet<Student> Students { get; set; }  
+        public DbSet<StudentAddress> StudentAddresses { get; set; }  
+    }  
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)  
+    {  
+        optionsBuilder.UseSqlServer("connectionstring");  
+       
+    }  
+} 
+
+STEP-5:
+    We need to create the database from the model (entities and context) by adding a migration.
+The command for adding migration is
+->add-migration StudentDB
+ 
+STEP-6:
+   After creating a migration, 
+we still need to create the database using the update-database command in the Package Manager Console.
+-> update-database
+    This will create the database with the name and location specified in the connection string in the UseSqlServer() method. 
+It creates a table for each DbSet property (Student and StudentAddress) as shown below.
+
+STEP-7:
+    If in case we should add one more property to the Student entity then we should do the following
+->We should add the new Property in the Student class.
+->Then,  execute the Add-Migrationcommand again,with the different name
+->add-migration EmployeeManagement
+->Now the Student class has added with the new property.
+Thus the database has updated with the new property.
+
+   

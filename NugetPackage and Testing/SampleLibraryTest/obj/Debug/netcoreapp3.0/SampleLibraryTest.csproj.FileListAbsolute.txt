@@ -1,0 +1,3 @@
+C:\Training\ClassLibrary\SampleLibraryTest\obj\Debug\netcoreapp3.0\SampleLibraryTest.csprojAssemblyReference.cache
+C:\Training\ClassLibrary\SampleLibraryTest\obj\Debug\netcoreapp3.0\SampleLibraryTest.AssemblyInfoInputs.cache
+C:\Training\ClassLibrary\SampleLibraryTest\obj\Debug\netcoreapp3.0\SampleLibraryTest.AssemblyInfo.cs
