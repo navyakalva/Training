@@ -12,8 +12,8 @@ namespace SampleWebAPI.Repositories
     {
         public void AddEmployee(EmpDetails emp);
         public void UpdateEmployee(EmpDetails emp);
-        EmpDetails GetEmployee(int id);
+        EmpDetails GetEmployee(string id);
 
-        public void DeleteEmployee(int id);
+        public void DeleteEmployee(string id);
     }
 }

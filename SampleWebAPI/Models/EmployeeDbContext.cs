@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -22,7 +22,7 @@ namespace SampleWebAPI.Models
             if (!optionsBuilder.IsConfigured)
             {
 
-                optionsBuilder.UseSqlServer("Server=KEERTHIKA;Database=Employeedb;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=LTIN233193\\SQLEXPRESS;Database=Employeedb;Trusted_Connection=True;User Id=sa;Password=password-1;");
             }
         }
 
@@ -30,30 +30,36 @@ namespace SampleWebAPI.Models
         {
             modelBuilder.Entity<EmpDetails>(entity =>
             {
+                entity.HasIndex(e => e.Name)
+                    .HasName("UQ__EmpDetai__737584F6D8C2450E")
+                    .IsUnique();
+
                 entity.Property(e => e.Id)
-                    .HasColumnName("ID")
-                    .HasMaxLength(255);
+                    .HasMaxLength(10)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.Contact)
-                    .IsRequired()
-                    .HasMaxLength(255);
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.Designation)
                     .IsRequired()
-                    .HasMaxLength(255);
+                    .HasMaxLength(30)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.MailId)
                     .IsRequired()
-                    .HasColumnName("Mail-Id")
-                    .HasMaxLength(255);
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.Name)
                     .IsRequired()
-                    .HasMaxLength(255);
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.Salary)
-                    .IsRequired()
-                    .HasMaxLength(255);
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
             });
 
             OnModelCreatingPartial(modelBuilder);

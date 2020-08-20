@@ -20,14 +20,14 @@ namespace SampleWebAPI.Repositories
             _context.SaveChanges();
         }
 
-        public void DeleteEmployee(int id)
+        public void DeleteEmployee(string id)
         {
             EmpDetails e = _context.EmpDetails.Find(id);
             _context.Remove(e);
             _context.SaveChanges();
         }
 
-        public EmpDetails GetEmployee(int id)
+        public EmpDetails GetEmployee(string id)
         {
             return _context.EmpDetails.Find(id);
         }
@@ -37,3 +37,4 @@ namespace SampleWebAPI.Repositories
             _context.Update(emp);
         }
     }
+}

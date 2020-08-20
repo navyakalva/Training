@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using SampleWebAPI.Repositories;
 
-namespace EmployeeDetailsApp.Controllers
+namespace SampleWebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -18,13 +18,22 @@ namespace EmployeeDetailsApp.Controllers
         [HttpPut]
         [Route("UpdateEmployee")]
 
-        public void UpdateEmployee(EmpDetails emp)
+        public IActionResult UpdateEmployee(EmpDetails emp)
         {
-             _repo.UpdateEmployee(emp);
+             
+             try
+            {
+               _repo.UpdateEmployee(emp);
+                return Ok();
+            }
+            catch(Exception e)
+            {
+                return Ok(e.InnerException.Message);
+            }
         }
         [HttpGet]
         [Route("GetEmployee/{id}")]
-        public IActionResult GetEmployee(int id)
+        public IActionResult GetEmployee(string id)
         {
             try
             {
@@ -37,7 +46,7 @@ namespace EmployeeDetailsApp.Controllers
         }
         [HttpDelete]
         [Route("DeleteEmployee/{id}")]
-        public IActionResult DeleteEmployee(int id)
+        public IActionResult DeleteEmployee(string id)
         {
             try
             {
